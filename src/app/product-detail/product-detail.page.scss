@@ -1,0 +1,43 @@
+.product-card {
+  --background: #fff;
+  --border-radius: 15px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+ion-img {
+  --border-top-left-radius: 15px;
+  --border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+ion-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+ion-card-subtitle {
+  font-size: 1em;
+  color: #666;
+}
+
+ion-card-content p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #555;
+}
+
+ion-button {
+  --border-radius: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ion-content {
+  --background: #f8f8f8;
+}

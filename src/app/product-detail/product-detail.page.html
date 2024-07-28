@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Product Detail</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="product">
+  <ion-card class="product-card">
+    <ion-img [src]="product.image && product.image.length > 0 ? product.image : 'assets/default-image.png'"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ product.title }}</ion-card-title>
+      <ion-card-subtitle>{{ product.category.name }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ product.description }}</p>
+      <p><strong>Price: {{ product.price | currency }}</strong></p>
+      <ion-button expand="block" (click)="addToCart()">Add to Cart</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

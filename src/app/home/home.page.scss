@@ -1,0 +1,44 @@
+ion-content{
+  background-color: whitesmoke;
+}
+ion-header {
+  --background: #3880ff;
+  --color: #fff;
+}
+
+ion-item {
+  --border-color: #e0e0e0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+ion-thumbnail {
+  --size: 70px;
+  img{
+    border-radius: 20%;
+  }
+}
+
+ion-label h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+ion-label p {
+  font-size: 0.9em;
+  margin: 0.3em 0;
+  color: #666;
+}
+
+ion-label strong {
+  color: #3880ff;
+}
+
+ion-button {
+  --border-radius: 12px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+}
